@@ -49,12 +49,12 @@
                     <div class="mb-4">
                         <label class="block text-gray-700">Name</label>
                         <input type="text" name="name" class="w-full p-2 border border-gray-300 rounded">
-
+                        <div id="name_error"></div>
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Description</label>
                         <textarea name="description" class="w-full p-2 border border-gray-300 rounded"></textarea>
-
+                        <div id="description_error"></div>
                     </div>
                     <div class="mb-4">
                         <label class="block text-gray-700">Price</label>
@@ -64,7 +64,7 @@
                     <div class="mb-4">
                         <label class="block text-gray-700">Image URL</label>
                         <input type="text" name="imageURL" class="w-full p-2 border border-gray-300 rounded">
-
+                        <div id="img_error"></div>
                     </div>
                 </form>
             </div>
