@@ -32,9 +32,15 @@ Route::get('/products', function () {
 });
 
 // Route::post('/products', [ProductController::class, 'store'])->name('products.store');
+Route::get('/products/{product}/details', [ProductController::class, 'details']);
 
 Route::get('api/products', [ProductController::class, 'index']);
 Route::post('/store/products', [ProductController::class, 'store'])->name('store.products');
+Route::delete('/products/{id}', [ProductController::class, 'destroy']);
+
+Route::get('/products/{product}/edit', [ProductController::class, 'edit']);
+Route::put('/products/{product}', [ProductController::class, 'update']);
+
 
 
 // Route::get('/products', [ProductController ::class, 'index']);
